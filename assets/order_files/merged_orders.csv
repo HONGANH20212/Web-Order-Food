@@ -1,0 +1,20 @@
+STT đơn,Chi tiết món,Tổng tiền,Thời gian order
+1,"['STT đơn (Tổng tiền)', ""1 (['Tên sản phẩm ( Số lượng)', 'Bò beat steak (3)', 'Salat trứng (2)', 'Mì tôm thịt (1)'])"", '2 (535.000 VNĐ)', '3 (636.000 VNĐ)', '4 (710.000 VNĐ)', '5 (1215.000 VNĐ)', '6 (519.000 VNĐ)', '7 (911.000 VNĐ)', '8 (310.000 VNĐ)', '9 (405.000 VNĐ)', '10 (613.000 VNĐ)', '11 (365.000 VNĐ)', '12 (567.000 VNĐ)', '13 (675.000 VNĐ)', '14 (352.000 VNĐ)', '15 (170.000 VNĐ)', '16 (879.000 VNĐ)', '17 (1471.000 VNĐ)']","['Tên sản phẩm ( Số lượng)', 'Bò beat steak (3)', 'Salat trứng (2)', 'Mì tôm thịt (1)']","['Tên sản phẩm ( Số lượng)', 'Bò beat steak (4)', 'Salat cá hồi (1)', 'Mì tôm thịt (1)']"
+2,"['Tên sản phẩm ( Số lượng)', 'Salat cá hồi (3)', 'Mì tôm thịt (1)']",535.000 VNĐ,2023-06-10T12:37:05.423Z
+3,"['Tên sản phẩm ( Số lượng)', 'Salat nhẹ (2)', 'Bugger bò (1)', 'Shasimi tôm (2)']",636.000 VNĐ,2023-06-10T12:40:23.289Z
+4,"['Tên sản phẩm ( Số lượng)', 'Mì tôm thịt (4)', 'Salat cá hồi (1)']",710.000 VNĐ,2023-06-10T12:52:43.275Z
+5,"['Tên sản phẩm ( Số lượng)', 'Bánh Creme (3)', 'Sườn bò sốt tiêu (2)', 'Salat Tôm (1)']",1215.000 VNĐ,2023-06-10T12:53:53.048Z
+6,"['Tên sản phẩm ( Số lượng)', 'Bugger bò (2)', 'Cá hồi sốt cam (1)']",519.000 VNĐ,2023-06-10T12:54:45.372Z
+7,"['Tên sản phẩm ( Số lượng)', 'Cá Hồi sốt kem (4)', 'Bắp bò hun khói (1)']",911.000 VNĐ,2023-06-10T12:57:56.327Z
+8,"['Tên sản phẩm ( Số lượng)', 'Bắp bò hun khói (2)']",310.000 VNĐ,2023-06-10T12:59:26.766Z
+9,"['Tên sản phẩm ( Số lượng)', 'Mì hải sản (3)']",405.000 VNĐ,2023-06-10T13:03:59.453Z
+10,"['Tên sản phẩm ( Số lượng)', 'Đào (2)', 'Dưa hấu (2)', 'cam (1)']",613.000 VNĐ,2023-06-10T13:04:51.218Z
+11,"['Tên sản phẩm ( Số lượng)', 'Kiwi và dâu (1)', 'Dưa lưới (1)']",365.000 VNĐ,2023-06-10T13:07:52.076Z
+12,"['Tên sản phẩm ( Số lượng)', 'Kiwi và dâu (3)']",567.000 VNĐ,2023-06-10T13:10:13.040Z
+13,"['Tên sản phẩm ( Số lượng)', 'cam (5)']",675.000 VNĐ,2023-06-10T13:15:14.608Z
+14,"['Tên sản phẩm ( Số lượng)', 'Dưa lưới (2)']",352.000 VNĐ,2023-06-10T13:22:37.637Z
+15,"['Tên sản phẩm ( Số lượng)', 'Nước chanh (2)', 'Nước suối (1)']",170.000 VNĐ,2023-06-10T13:23:48.710Z
+16,"['Tên sản phẩm ( Số lượng)', 'Rượu Red label (1)']",879.000 VNĐ,2023-06-10T13:24:30.614Z
+17,"['Tên sản phẩm ( Số lượng)', 'Bánh Brownies (4)', 'Bánh Croissant (2)', 'Bánh quy hạnh nhân (3)']",1471.000 VNĐ,2023-06-10T13:28:43.359Z
+18,"['Tên sản phẩm ( Số lượng)', 'Bò beat steak (3)', 'Salat trứng (2)', 'Mì tôm thịt (1)']",1385.000 VNĐ,2023-06-12T12:55:06.254Z
+19,"['Tên sản phẩm ( Số lượng)', 'Bò beat steak (4)', 'Salat cá hồi (1)', 'Mì tôm thịt (1)']",1635.000 VNĐ,2023-06-12T12:57:07.230Z

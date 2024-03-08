@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nhà hàng số 6 </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <!-- box icon -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <!-- header -->
+        <header>
+            <!-- nav -->
+            <div class="nav container">
+                <div id="header">
+
+                    <div id="menu">
+                        <div class="menu-item">
+                            <a href="index.html">NHÀ HÀNG SỐ 6</a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="index.html">TRANG CHỦ</a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="Doan.html">ĐỒ ĂN</a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="Douong.html">ĐỒ UỐNG</a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="Banhngot.html">BÁNH NGỌT</a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="Traicay.html">TRÁI CÂY</a>
+                        </div>
+
+                    </div>
+                    <div class="actions">
+                        <div class="menu-item">
+                            <!-- cart icon -->
+                            <a href="#"><i class='bx bx-shopping-bag' id="cart-icon"><span id="cart-no">0</span></i></a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- cart -->
+                <div class="cart">
+                    <h2 class="cart-title">Giỏ hàng</h2>
+                    <!-- content -->
+                    <div class="cart-content">
+                        <div class="cart-box">
+
+                        </div>
+                    </div>
+                    <!-- total -->
+                    <div class="total">
+                        <div class="total-title">Tổng tiền: </div>
+                        <div class="total-price">0</div>
+                    </div>
+                    <!-- Buy button -->
+                    <button type="button" onclick="checkout()" class="btn-buy">Thanh Toán</button>
+                    <!-- cart close -->
+                    <i class='bx bx-x' id="close-cart"></i>
+                </div>
+            </div>
+        </header>
+
+        <div id="wrapper">
+
+            <div id="banner">
+                <div class="box-left">
+                    <h2>
+                        <span>NHÀ HÀNG SỐ 6</span>
+                    </h2>
+                    <br>
+                    <p>Chuyên cung cấp các món ăn đảm bảo dinh dưỡng và hợp vệ sinh đến người dùng, phục vụ người dùng một cách hoàn hảo nhất</p>
+                    <button>Đặt hàng ngay</button>
+                </div>
+                <div class="box-right">
+                    <img src="assets/img_1.png" alt="">
+                    <img src="assets/img_2.png" alt="">
+                    <img src="assets/img_3.png" alt="">
+                </div>
+                <div class="to-bottom">
+                    <a href="">
+                        <img src="assets/to_bottom.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div id="wp-products">
+                <h2>ĐỒ UỐNG</h2>
+                <ul id="list-products">
+                </ul>
+
+                <div id="footer">
+                    <div class="box">
+                        <div class="logo">
+                        </div>
+                        <p class="it">Bản quyền: Nhà Hàng Số 6</p>
+                        <br>
+                        <p class="it">Mọi chi tiết xin liên hệ:</p>
+                        <br>
+                        <p class="it">nhahangso6@gmail.com</p>
+                    </div>
+                    <div class="box">
+                        <h3>NỘI DUNG</h3>
+                        <ul class="quick-menu">
+                            <div class="item">
+                                <a href="index.html">Trang Chủ</a>
+                            </div>
+                            <div class="item">
+                                <a href="Doan.html">Đồ Ăn</a>
+                            </div>
+                            <div class="item">
+                                <a href="Douong.html">Đồ Uống</a>
+                            </div>
+                            <div class="item">
+                                <a href="Banhngot.html">Bánh Ngọt</a>
+                            </div>
+                            <div class="item">
+                                <a href="Traicay.html">Trái Cây</a>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <h3>LIÊN HỆ</h3>
+                        <form action="">
+                            <input id="mailTuVan" type="text" placeholder="Địa chỉ email">
+                            <button type="button" onclick="tuVan()">Nhận tư vấn</button>
+                        </form>
+                    </div>
+                </div>
+
+                <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+                <script src="assets/js/doUong.js"></script>
+                <script src="assets/js/checkout.js"></script>
+
+            </div>
+        </div>
+        <!-- main là click close -->
+    </body>
+</html>
+
+<script>
+    let arrayCart = JSON.parse(localStorage.getItem("myCart"));
+    var totalQty = 0;
+    arrayCart.forEach(item => {
+        totalQty = totalQty + item.qty;
+    });
+    document.getElementById("cart-no").innerText = totalQty;
+</script>
+<script>
+    function tuVan() {
+        // validate mailTuVan 
+        let mailTuVan = document.getElementById("mailTuVan").value;
+        if (mailTuVan == "") {
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Bạn chưa nhập địa chỉ email!',
+            })
+        } else {
+            Swal.fire(
+                'Chúng tôi đã nhận được thông tin!',
+                'You clicked the button!',
+                'success'
+            )
+        }
+    }
+</script>
+<!-- nút sổ xuống -->
+<script>
+    const toBottom = document.querySelector(".to-bottom");
+
+    toBottom.addEventListener("click", function(event) {
+        event.preventDefault();
+        setTimeout(function() {
+            window.scrollTo({
+                top: document.body.scrollHeight,
+                behavior: "smooth"
+            });
+        }, 500);
+    });
+</script>
